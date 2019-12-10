@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 13-nov-2019 12:14:05 by Hibernate Tools 5.2.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="seguros" dynamic-insert="false" dynamic-update="false" mutable="true" name="modelo.Seguro" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="seguro">
+        <id name="idSeguro" type="java.lang.Integer">
+            <column name="idSeguro"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="nif" optimistic-lock="true" type="string" unique="false">
+            <column name="nif" not-null="true" unique="true"/>
+        </property>
+        <property generated="never" lazy="false" name="nombre" optimistic-lock="true" type="string" unique="false">
+            <column name="nombre"/>
+        </property>
+        <property generated="never" lazy="false" name="ape1" optimistic-lock="true" type="string" unique="false">
+            <column name="ape1"/>
+        </property>
+        <property generated="never" lazy="false" name="ape2" optimistic-lock="true" type="string" unique="false">
+            <column name="ape2"/>
+        </property>
+        <property generated="never" lazy="false" name="edad" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="edad"/>
+        </property>
+        <property generated="never" lazy="false" name="sexo" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="sexo"/>
+        </property>
+        <property generated="never" lazy="false" name="casado" optimistic-lock="true" type="java.lang.Character" unique="false">
+            <column length="1" name="casado"/>
+        </property>
+        <property generated="never" lazy="false" name="numHijos" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="numHijos"/>
+        </property>
+        <property generated="never" lazy="false" name="fechaCreacion" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="fechaCreacion"/>
+        </property>
+        <property generated="never" lazy="false" name="tipoSeguro" optimistic-lock="true" type="string" unique="false">
+            <column name="tipoSeguro"/>
+        </property>
+    </class>
+</hibernate-mapping>
